@@ -19,5 +19,12 @@ export default function RootLayout() {
     }
   }, [areFontsLoaded]);
 
-  return <Stack />;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: "white", padding: 8 },
+      }}
+    />
+  );
 }
